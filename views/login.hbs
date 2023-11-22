@@ -3,10 +3,13 @@
         <form class="col-12 col-sm-10 col-lg-6 m-auto my-5 bg-dark text-white p-5 rounded-4" action="/login" method="post">
 
             <h1 class="my-5 text-center">LOGIN</h1>
+            <div>
+                <p class="text-danger">{{loginError}}</p>
+            </div>
             <!-- Email input -->
             <div class="form-outline mb-4">
-                <input type="email" name="Email" id="form2Example1" class="form-control bg-dark text-white" required />
-                <label class="form-label" for="form2Example1">Email address</label>
+                <input type="text" name="User" id="form2Example1" class="form-control bg-dark text-white" required />
+                <label class="form-label" for="form2Example1">User Name</label>
             </div>
 
             <!-- Password input -->

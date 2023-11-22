@@ -1,17 +1,17 @@
 <section class="loginPage d-flex align-items-center">
     <div class="container-fluid ">
-        <form class="col-12 col-sm-10 col-lg-6 m-auto my-5 bg-dark text-white p-5 rounded-4">
+        <form class="col-12 col-sm-10 col-lg-6 m-auto my-5 bg-dark text-white p-5 rounded-4" action="/login" method="post">
 
             <h1 class="my-5 text-center">LOGIN</h1>
             <!-- Email input -->
             <div class="form-outline mb-4">
-                <input type="email" id="form2Example1" class="form-control bg-dark text-white" />
+                <input type="email" name="Email" id="form2Example1" class="form-control bg-dark text-white" required />
                 <label class="form-label" for="form2Example1">Email address</label>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-4">
-                <input type="password" id="form2Example2" class="form-control bg-dark text-white" />
+                <input type="password" name="Password" id="form2Example2" class="form-control bg-dark text-white" required />
                 <label class="form-label" for="form2Example2">Password</label>
             </div>
 

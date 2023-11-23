@@ -12,7 +12,7 @@ const verifyLogin = (req, res, next) => {
 
 router.get('/', verifyLogin, (req, res) => {
   res.set('Cache-Control', 'no-store')
-  res.json("Home Page")
+  res.render('index')
 
 })
 router.get('/login', (req, res) => {
